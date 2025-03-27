@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MarioLlama_Navegacion.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MarioLlama_Navegacion"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MarioLlama_Navegacion">
+
+    <FlyoutItem 
+    Title=" Home ">
+        <ShellContent
+    Title=" Home "
+    ContentTemplate="{DataTemplate local:MainPage}"
+    Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem 
+    Title=" Elefante ">
+        <ShellContent
+    Title="Pagina1"
+    ContentTemplate="{DataTemplate local:Elefante}"
+    Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem 
+    Title=" Rinoceronte ">
+        <ShellContent
+    Title="Pagina2"
+    ContentTemplate="{DataTemplate local:Rinoceronte}"
+    Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem 
+    Title=" Hipopotamo ">
+        <ShellContent
+    Title="Pagina3"
+    ContentTemplate="{DataTemplate local:Hipopotamo}"
+    Route="MainPage" />
+    </FlyoutItem>
+
+    <FlyoutItem 
+    Title=" Jabalí ">
+        <ShellContent
+    Title="Pagina4"
+    ContentTemplate="{DataTemplate local:Jabali}"
+    Route="MainPage" />
+    </FlyoutItem>
+
+</Shell>

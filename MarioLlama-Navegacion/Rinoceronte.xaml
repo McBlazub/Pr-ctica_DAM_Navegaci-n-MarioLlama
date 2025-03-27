@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MarioLlama_Navegacion.Rinoceronte"
+             Title="Rinoceronte"
+             BackgroundColor="Plum">
+    <VerticalStackLayout>
+        <!--Título-->
+        <Label 
+            Text="Rinoceronte"
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1"
+            
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <!--Subtítulo-->
+        <Label
+            Text="El tanque que respira"
+            Style="{StaticResource SubHeadline}"
+            SemanticProperties.HeadingLevel="Level2"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <!--Espacio de respiro-->
+        <Label
+        Text=" "
+        Style="{StaticResource SubHeadline}"/>
+        <!--Foto-->
+        <Image 
+            Source="img_rin.jpg"
+            HeightRequest="300"
+            Aspect="AspectFit" />
+        <!--Espacio de respiro-->
+        <Label
+        Text=""
+        Style="{StaticResource SubHeadline}"/>
+        <!--Botón que lleva a Detalles-->
+        <Button 
+            Text="Detalles"
+            Clicked="DetallesBTN"
+            x:Name="btn1"/>
+    </VerticalStackLayout>
+</ContentPage>
